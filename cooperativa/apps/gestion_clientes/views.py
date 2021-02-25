@@ -25,7 +25,7 @@ def index(request):
                 Q(cedula = busqueda)
             ).distinct()
 
-        return render(request,'clientes/principal.html', locals())
+        return render(request,'clientes/index.html', locals())
     else:
         return render(request,'login/alerta.html', locals())
        
